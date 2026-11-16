@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Match It, Code It, Build It!</title>
+  <!-- Font Awesome: required to display the icons below. Internet connection needed. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="inspector.js" defer></script>
+</head>
+<body>
+  <h1 class="page-title">Match It, Code It, Build It!</h1>
+  <main class="workspace">
+    <section class="design" aria-label="Portfolio design">
+      <div class="portfolio">
+        <header class="site-header inspectable" data-part="header" tabindex="0" role="button" aria-label="Inspect header code">
+          <strong>MyDigitalWorld</strong>
+          <nav aria-label="Portfolio navigation"><a href="#" class="demo-link">Home</a><a href="#" class="demo-link">Projects</a></nav>
+        </header>
+        <section class="hero inspectable" data-part="hero" tabindex="0" role="button" aria-label="Inspect introduction code">
+          <h2>Hi, I'm Alex! 👋</h2>
+          <p>I'm a T Level Digital student who enjoys coding and gaming.</p>
+          <a class="site-button demo-link" href="#">View My Projects</a>
+        </section>
+        <section class="interests inspectable" data-part="cards" tabindex="0" role="button" aria-label="Inspect interest cards code">
+          <h2>My Interests</h2>
+          <div class="cards">
+            <div class="interest-card"><h3><i class="fa-solid fa-gamepad" aria-hidden="true"></i> Gaming</h3><p>My favourite games</p></div>
+            <div class="interest-card"><h3><i class="fa-solid fa-code" aria-hidden="true"></i> Coding</h3><p>Web development</p></div>
+            <div class="interest-card"><h3><i class="fa-solid fa-headphones" aria-hidden="true"></i> Music</h3><p>What I listen to</p></div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <section class="inspector" aria-label="Code inspector" aria-live="polite">
+      <h2>Code Inspector</h2>
+      <p id="selection">Select a part of the design.</p>
+      <div class="code-heading"><h3>HTML</h3><button type="button" data-copy="html" hidden>Copy</button></div>
+      <pre><code id="html-code"></code></pre>
+      <div class="code-heading"><h3>CSS</h3><button type="button" data-copy="css" hidden>Copy</button></div>
+      <pre><code id="css-code"></code></pre>
+    </section>
+  </main>
+  <section class="challenge">
+    <h2>Your turn: Projects page</h2>
+    <p>Create <code>projects.html</code> and build your own Projects page using the same techniques. Include navigation, an introduction, at least four project cards, reusable classes, an ID, hover effects, and responsive sizing.</p>
+    <div class="projects-target" aria-label="Example Projects page design">
+      <div class="projects-nav"><strong>MyDigitalWorld</strong><span>Home &nbsp; Projects</span></div>
+      <div class="projects-hero"><h3>My Projects 🚀</h3><p>Explore what I've been creating.</p></div>
+      <div class="projects-grid">
+        <div><i class="fa-solid fa-globe project-icon" aria-hidden="true"></i><strong>My First Website</strong><small>HTML &amp; CSS</small></div>
+        <div><i class="fa-solid fa-gamepad project-icon" aria-hidden="true"></i><strong>Gaming Page</strong><small>My favourite games</small></div>
+        <div><i class="fa-solid fa-palette project-icon" aria-hidden="true"></i><strong>Creative Design</strong><small>Experimenting with CSS</small></div>
+        <div><i class="fa-solid fa-lightbulb project-icon" aria-hidden="true"></i><strong>Future Project</strong><small>My next big idea</small></div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
